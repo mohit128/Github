@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dd{
+             position: relative; 
+            display: inline-block;
+        }
+        .dd-button{
+            padding: 10px;
+            background: rgba(187, 71, 71, 0.938);
+            color: whitesmoke;
+            border:none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 2ch;
+           
+            
+        }
+        
+        .dd-content{
+             position: absolute; 
+            height: 0;
+            transition: height 1s;
+            overflow: hidden; 
+            box-shadow: 0 18px 36px rgb(0, 0, 0,0.30),0 14px 11px rgb(0, 0, 0,0.22);         
+        }
+       
+        .dd:hover>.dd-content{
+            height: 150px;
+            width: 10rem;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            border: 1px solid grey;
+            
+            transform: translateY(.1rem);
+
+             }
+
+        .dd-content>a{
+            text-align: center;
+            display: block;
+            padding: 1rem 0;
+            margin: 0;
+            width: inherit;
+            color: whitesmoke;
+            text-decoration: none;
+            transition: .5s;
+            background-color: rgba(175, 185, 238, 0.322);
+            
+        }
+        a:hover{
+            background: #000;
+            width: 10rem;
+        }
+        .dd1{
+            margin-left: 10rem;
+             position: relative; 
+            display: inline-block;
+        }
+        .dd-button1{
+            padding: 10px;
+            background: rgba(162, 187, 71, 0.938);
+            color: black;
+            border:none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 2ch;
+           
+            
+        }
+        
+        .dd-content1{
+             position: absolute; 
+            opacity:  0;
+            transition: opacity 1s;
+            /* overflow: hidden;  */
+            box-shadow: 0 18px 36px rgb(0, 0, 0,0.30),0 14px 11px rgb(0, 0, 0,0.22);         
+        }
+       
+        .dd1:hover>.dd-content1{
+            opacity: 1;
+            width: 10rem;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            border: 1px solid grey;
+            
+            transform: translateY(.1rem);
+
+             }
+
+        .dd-content1>a{
+            text-align: center;
+            display: block;
+            padding: 1rem 0;
+            margin: 0;
+            width: inherit;
+            color: rgba(245, 245, 245, 0.829);
+            text-decoration: none;
+            transition: .5s;
+            background-color: rgba(233, 175, 238, 0.288);
+            
+        }
+        a:hover{
+            background: rgb(49, 46, 46);
+            width: 10rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="dd">
+        <button class="dd-button">Tap me</button>
+        <div class="dd-content">
+           <a href="">Home</a>
+           <a href="">About</a>
+           <a href="">Articles</a>
+        </div>
+    </div>
+    <div class="dd1">
+        <button class="dd-button1">Hover me</button>
+        <div class="dd-content1">
+           <a href="">Home</a>
+           <a href="">About</a>
+           <a href="">Articles</a>
+        </div>
+    </div>
+</body>
+</html>
